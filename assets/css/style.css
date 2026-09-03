@@ -1,0 +1,162 @@
+:root {
+  --bg: #faf7f2;
+  --text: #2b2825;
+  --muted: #6b645c;
+  --accent: #a6543a;
+  --line: #e4ddd2;
+  --max-width: 720px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  color: var(--text);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  border-bottom-color: var(--accent);
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+header.site-header {
+  border-bottom: 1px solid var(--line);
+  padding: 40px 0 24px;
+  margin-bottom: 40px;
+}
+
+header.site-header .header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.headshot {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--line);
+  flex-shrink: 0;
+}
+
+.header-text h1 {
+  font-size: 26px;
+  margin: 0 0 4px;
+}
+
+.header-text .affiliation {
+  color: var(--muted);
+  font-size: 15px;
+  margin: 0 0 10px;
+}
+
+nav.site-nav a {
+  margin-right: 18px;
+  font-size: 15px;
+  color: var(--text);
+}
+
+nav.site-nav a.current {
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+}
+
+main {
+  padding-bottom: 60px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 20px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.pub-list, .research-list {
+  list-style: none;
+  padding: 0;
+}
+
+.pub-list li, .research-list li {
+  margin-bottom: 22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.pub-list li:last-child, .research-list li:last-child {
+  border-bottom: none;
+}
+
+.pub-title {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.pub-meta {
+  color: var(--muted);
+  font-size: 14.5px;
+}
+
+.pub-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 13.5px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 12.5px;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  padding: 1px 7px;
+  margin-right: 6px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 8px;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  padding: 24px 0 40px;
+}
